@@ -91,6 +91,12 @@
             align-items: center;
         }
 
+        .company-logo {
+            height: 24px;
+            width: auto;
+            margin-bottom: 2rem;
+        }
+
         .profile-image-wrapper {
             position: relative;
             width: 100%;
@@ -133,32 +139,7 @@
             font-size: clamp(1.1rem, 2vw, 1.5rem);
             font-weight: 500;
             color: #090931;
-            margin-bottom: 0.5rem;
-        }
-
-        .company {
-            font-size: clamp(1rem, 1.5vw, 1.25rem);
-            font-weight: 400;
-            color: #090931;
             margin-bottom: 2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .company-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(9,9,49,0.06);
-            padding: 0.5rem 1rem;
-            border-radius: 50px;
-            font-size: 0.9rem;
-        }
-
-        .company-badge img {
-            height: 20px;
-            width: auto;
         }
 
         /* Contact Cards */
@@ -308,10 +289,6 @@
                 max-width: 320px;
             }
 
-            .company {
-                justify-content: center;
-            }
-
             .contact-card {
                 text-align: left;
             }
@@ -373,8 +350,8 @@
         <div class="hero-content">
             <div class="profile-image-container animate-in">
                 <div class="profile-image-wrapper">
-                    <img src="profile.jpg" 
-                         alt="Reginald Samuel - Founder & CEO at Cura CX" 
+                    <img src="profile.jpg"
+                         alt="Reginald Samuel - Founder & CEO at Cura CX"
                          class="profile-image"
                          id="profileImg">
                 </div>
@@ -383,13 +360,8 @@
             <div class="info-section">
                 <h1 class="name animate-in delay-1">Reginald Samuel</h1>
                 <p class="title animate-in delay-2">Founder & CEO</p>
-                <div class="company animate-in delay-2">
-                    <span class="company-badge">
-                        <img src="logo.png" alt="Cura CX Logo">
-                        Cura CX
-                    </span>
-                </div>
-                
+                <img src="logo.png" alt="Cura CX Logo" class="company-logo animate-in delay-2">
+
                 <div class="contact-grid animate-in delay-3">
                     <a href="tel:+971551911260" class="contact-card">
                         <div class="contact-icon">
